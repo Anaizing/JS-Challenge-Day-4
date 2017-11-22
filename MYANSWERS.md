@@ -84,15 +84,16 @@ here we go
     
   # map() filter()
   6. (https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris)
+  
   Create a list of Boulevards in Paris that contain 'de' anywhere in the name
   For this exercise work on the console of the webpage provided.
  
  
-     const category = document.querySelector('.mw-category');
-      const links = [...category.querySelectorAll('a')];
-      const de = links
-                  .map(link => link.textContent)
-                  .filter(streetName => streetName.includes('de') );
+       const category = document.querySelector('.mw-category');
+        const links = [...category.querySelectorAll('a')];
+        const de = links
+                    .map(link => link.textContent)
+                    .filter(streetName => streetName.includes('de') );
 
  
    ![ScreenShot](six.png)
