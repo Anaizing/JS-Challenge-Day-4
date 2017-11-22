@@ -83,9 +83,9 @@ here we go
    ![ScreenShot](five.png)
     
   # map() filter()
-  6. Create a list of Boulevards in Paris that contain 'de' anywhere in the name
+  6. (https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris)
+  Create a list of Boulevards in Paris that contain 'de' anywhere in the name
   For this exercise work on the console of the webpage provided.
-  (https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris)
  
  
      const category = document.querySelector('.mw-category');
