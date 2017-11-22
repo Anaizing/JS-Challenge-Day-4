@@ -62,11 +62,10 @@ here we go
   # Array.prototype.reduce()
   4. How many years did all the inventors live?
 
-  const totalYears = inventors.reduce((total, inventor) => {
-    return total + (inventor.passed - inventor.year);
-  }, 0);
-
-  console.log(totalYears);
+            const totalYears = inventors.reduce((total, inventor) => {
+              return total + (inventor.passed - inventor.year);
+            }, 0);
+            console.log(totalYears);
   
       //861
 
@@ -104,8 +103,10 @@ here we go
         const inOrder = people.sort((a,b) => {return a-b});
         console.table(inOrder);
 
-   ![ScreenShot](seven a.png)
-   ![ScreenShot](seven b.png)
+
+  ![ScreenShot](seven a.png)
+   
+  ![ScreenShot](seven b.png)
     
     
   # Array.prototype.reduce()
