@@ -1,8 +1,5 @@
-# JS-Challenge-Day-4
-Array Cardio- 8 exercises on array methods
-
-  // ## Array Cardio Day 1
-  // Some data we can work with
+# JS-Challenge-Day-4 ( Array Cardio Day 1)
+  Some data to begin with, and a list of the exercises (without the answers)
   
 
       const inventors = [
@@ -35,24 +32,19 @@ Array Cardio- 8 exercises on array methods
  
  
  
- // Array.prototype.filter()
-  // 1. Filter the list of inventors for those who were born in the 1500's
+ # Array.prototype.filter()
+ 1. Filter the list of inventors for those who were born in the 1500's
   
-      const fifteen = inventors.filter(inventor => (inventor.year >= 1500 && inventor.year < 1600))
-
-      console.table(fifteen);
 
 
 
-  // Array.prototype.map()
-  // 2. Give us an array of the inventors' first and last names
-  const fullNames = inventors.map(inventor => `${inventor.first} ${inventor.last}`);
-
-  console.log(fullNames);
+  # Array.prototype.map()
+  2. Give us an array of the inventors' first and last names
+ 
 
 
 
-  // Array.prototype.sort()
+  # Array.prototype.sort()
   // 3. Sort the inventors by birthdate, oldest to youngest
   const birthday = inventors.sort((a,b) => a.year > b.year ? 1: -1);
 
@@ -60,51 +52,26 @@ Array Cardio- 8 exercises on array methods
 
 
 
-  // Array.prototype.reduce()
+  # Array.prototype.reduce()
   // 4. How many years did all the inventors live?
-  const totalYears = inventors.reduce((total, inventor) => {
-    return total + (inventor.passed - inventor.year);
-  }, 0);
-
-  console.log(totalYears);
+  
 
 
 
-  // 5. Sort the inventors by years lived
-  const oldest = inventors.sort((a,b) => {
-    const lastGuy = a.passed - a.year;
-    const nextGuy = b.passed - b.year;
-    lastGuy > nextGuy ? -1: 1;
-  });
-
-  console.table(oldest);
+  # 5. Sort the inventors by years lived
+  
 
 
-/* For this exercise work on the console of the webpage provided.
-  // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
+  # 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
   // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
-  const category = document.querySelector('.mw-category');
-  const links = [...category.querySelectorAll('a')];
-  const de = links
-              .map(link => link.textContent)
-              .filter(streetName => streetName.includes('de') );
-*/
+ 
 
-  // 7. sort Exercise
+  # 7. sort Exercise
   // Sort the people alphabetically by last name
-  const inOrder = people.sort((a,b) => {return a-b});
-
-  console.table(inOrder);
 
 
-
-  // 8. Reduce Exercise
+  # 8. Reduce Exercise
   // Sum up the instances of each of these
   const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
 
-  const count = data.reduce((x,y) => {
-    x[y] = (x[y] + 1) || 1;
-    return x
-  }, {} );
-
-  console.table(count);
+ 
