@@ -85,7 +85,8 @@ here we go
   # map() filter()
   6. Create a list of Boulevards in Paris that contain 'de' anywhere in the name
   For this exercise work on the console of the webpage provided.
-  https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+  (https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris)
+ 
  
      const category = document.querySelector('.mw-category');
       const links = [...category.querySelectorAll('a')];
@@ -100,8 +101,9 @@ here we go
   7. Sort Exercise
   Sort the people alphabetically by last name
 
-        const inOrder = people.sort((a,b) => {return a-b});
-        console.table(inOrder);
+
+            const inOrder = people.sort((a,b) => {return a-b});
+            console.table(inOrder);
 
 
   ![ScreenShot](seven a.png)
