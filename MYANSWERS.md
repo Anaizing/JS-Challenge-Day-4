@@ -107,7 +107,11 @@ here we go
             console.table(inOrder);
 
 
+
+
   ![ScreenShot](seven a.png)
+   
+   
    
   ![ScreenShot](seven b.png)
     
