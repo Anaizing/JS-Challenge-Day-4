@@ -62,28 +62,50 @@ here we go
   # Array.prototype.reduce()
   4. How many years did all the inventors live?
 
-      ![ScreenShot](four.png)
+  const totalYears = inventors.reduce((total, inventor) => {
+    return total + (inventor.passed - inventor.year);
+  }, 0);
+
+  console.log(totalYears);
+  
+      //861
 
   # Array.prototype.sort()
   5. Sort the inventors by years lived
+  
+    const oldest = inventors.sort((a,b) => {
+    const lastGuy = a.passed - a.year;
+    const nextGuy = b.passed - b.year;
+    lastGuy > nextGuy ? -1: 1;
+      });
 
-      ![ScreenShot](five.png)
+      console.table(oldest);
+
+   ![ScreenShot](five.png)
     
   # map() filter()
   6. Create a list of Boulevards in Paris that contain 'de' anywhere in the name
   For this exercise work on the console of the webpage provided.
   https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
  
-    ![ScreenShot](six.png)
+     const category = document.querySelector('.mw-category');
+      const links = [...category.querySelectorAll('a')];
+      const de = links
+                  .map(link => link.textContent)
+                  .filter(streetName => streetName.includes('de') );
+
+ 
+   ![ScreenShot](six.png)
     
   # Array.prototype.sort()
   7. Sort Exercise
   Sort the people alphabetically by last name
 
+        const inOrder = people.sort((a,b) => {return a-b});
+        console.table(inOrder);
 
-
-    ![ScreenShot](seven a.png)
-    ![ScreenShot](seven b.png)
+   ![ScreenShot](seven a.png)
+   ![ScreenShot](seven b.png)
     
     
   # Array.prototype.reduce()
@@ -91,7 +113,13 @@ here we go
   
           const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 
           'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+          
+    const count = data.reduce((x,y) => {
+          x[y] = (x[y] + 1) || 1;
+            return x
+    }, {} );
+    console.table(count);
 
-      ![ScreenShot](eight.png)
+   ![ScreenShot](eight.png)
 
  
