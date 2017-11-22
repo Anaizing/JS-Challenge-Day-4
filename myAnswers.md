@@ -46,34 +46,44 @@ here we go
   # Array.prototype.map()
   2. Give us an array of the inventors' first and last names
  
-
+    ![ScreenShot](two.png)
+    
   # Array.prototype.sort()
   3. Sort the inventors by birthdate, oldest to youngest
   
-
+    ![ScreenShot](three.png)
+    
   # Array.prototype.reduce()
   4. How many years did all the inventors live?
   
-
+    ![ScreenShot](four.png)
+    
   # Array.prototype.sort()
   5. Sort the inventors by years lived
   
-
+    ![ScreenShot](five.png)
+    
   # map() filter()
   6. Create a list of Boulevards in Paris that contain 'de' anywhere in the name
   For this exercise work on the console of the webpage provided.
   https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
  
-
+    ![ScreenShot](six.png)
+    
   # Array.prototype.sort()
   7. Sort Exercise
   Sort the people alphabetically by last name
 
-
+    ![ScreenShot](seven a.png)
+    ![ScreenShot](seven b.png)
+    
+    
   # Array.prototype.reduce()
   8. Sum up the instances of each of these
   
           const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 
           'bike', 'walk', 'car', 'van', 'car', 'truck' ];
-
+          
+    ![ScreenShot](eight.png)
+    
  
