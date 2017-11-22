@@ -1,5 +1,6 @@
 # JS-Challenge-Day-4 ( Array Cardio Day 1)
-  Some data to begin with, and a list of the exercises (without the answers)
+  Some data to begin with, and a list of the exercises (Without the answers.)
+  For the answers go to the myAnswers file.
   
 
       const inventors = [
@@ -53,13 +54,13 @@
   
 
   # map() filter()
-  6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
+  6. Create a list of Boulevards in Paris that contain 'de' anywhere in the name
   For this exercise work on the console of the webpage provided.
   https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
  
 
   # Array.prototype.sort()
-  7. sort Exercise
+  7. Sort Exercise
   Sort the people alphabetically by last name
 
 
